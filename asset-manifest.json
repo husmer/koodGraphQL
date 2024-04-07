@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/koodGraphQL/static/css/main.35b48210.css",
-    "main.js": "/koodGraphQL/static/js/main.f1305ebf.js",
+    "main.js": "/koodGraphQL/static/js/main.6d6dff63.js",
     "static/js/453.7f217cff.chunk.js": "/koodGraphQL/static/js/453.7f217cff.chunk.js",
     "index.html": "/koodGraphQL/index.html",
     "main.35b48210.css.map": "/koodGraphQL/static/css/main.35b48210.css.map",
-    "main.f1305ebf.js.map": "/koodGraphQL/static/js/main.f1305ebf.js.map",
+    "main.6d6dff63.js.map": "/koodGraphQL/static/js/main.6d6dff63.js.map",
     "453.7f217cff.chunk.js.map": "/koodGraphQL/static/js/453.7f217cff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35b48210.css",
-    "static/js/main.f1305ebf.js"
+    "static/js/main.6d6dff63.js"
   ]
 }
