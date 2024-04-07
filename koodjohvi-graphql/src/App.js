@@ -28,7 +28,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <HashRouter basename='/koodGraphQL'>
+      <HashRouter basename='/'>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route element={<ProtectedRoute />}>
