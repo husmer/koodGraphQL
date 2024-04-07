@@ -9,7 +9,7 @@ function ProtectedRoute() {
     const currentTime = new Date().getTime();
     if (!tokenInfo || currentTime > tokenInfo.expiration) {
       localStorage.removeItem("token");
-      navigate("#/");
+      navigate("/");
       window.location.reload();
     }
   }, [navigate]);
