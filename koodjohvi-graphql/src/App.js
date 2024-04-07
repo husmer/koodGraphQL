@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { BrowserRouter as BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 import Login from "./Components/Login";
@@ -28,7 +28,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter basename='/koodGraphQL'>
+      <HashRouter basename='/koodGraphQL'>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route element={<ProtectedRoute />}>
@@ -37,7 +37,7 @@ function App() {
           <Route path="/error" element={<h1>Invalid Path</h1>} />
           <Route path="*" element={<Navigate to="/error" replace />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ApolloProvider>
   );
 }
