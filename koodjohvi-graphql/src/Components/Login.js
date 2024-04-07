@@ -25,7 +25,7 @@ const Login = () => {
       const defaultExpiresIn = 60 * 15 * 1000; // 15 minutes
       const expiration = new Date().getTime() + defaultExpiresIn;
       localStorage.setItem('token', JSON.stringify({ value: token, expiration }));
-      navigate('/dashboard');
+      navigate('#/dashboard');
       window.location.reload();
     } else {
       setError('Invalid username/email or password');
