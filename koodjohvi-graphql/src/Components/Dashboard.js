@@ -17,7 +17,7 @@ function Dashboard() {
     try {
         token = JSON.parse(localStorage.getItem('token')).value; // Retrieve JWT token value from localStorage, if available
     } catch (error) {
-        navigate('/koodGraphQL');
+        navigate('/');
     }
 
     const { error: userInfoError, loading: userInfoLoading, data: userInfoData } = useQuery(GET_USER_INFO, {
@@ -52,7 +52,7 @@ function Dashboard() {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
-        window.location.href = "/koodGraphQL";
+        window.location.href = "/";
     };
 
     if (userInfoLoading || userLevelLoading || userXPLoading) return <p>Loading...</p>;
